@@ -1,72 +1,124 @@
+/* ===== GLOBAL ===== */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f8f8f8; /* Light background */
+    color: #222; /* Soft black text */
 }
 
+/* ===== HEADER ===== */
 header {
-    background-color: #111;
+    background: linear-gradient(to right, #1a1a1a, #2b2b2b);
     color: white;
-    padding: 15px;
+    padding: 18px;
     text-align: center;
+    border-bottom: 3px solid #ff2e2e;
+}
+
+.logo-container h1 {
+    color: #ff2e2e; /* Main red */
+}
+
+/* ===== NAVIGATION ===== */
+nav {
+    margin-top: 10px;
 }
 
 nav a {
     color: white;
-    margin: 0 15px;
+    margin: 0 18px;
     text-decoration: none;
     font-weight: bold;
+    transition: 0.3s;
+    padding-bottom: 5px;
 }
 
 nav a:hover {
-    color: #ff3c00;
+    color: #ff2e2e;
+    border-bottom: 2px solid #ff2e2e;
 }
 
+/* ===== HERO SECTION ===== */
 .hero {
     text-align: center;
     padding: 100px 20px;
-    background: url('https://via.placeholder.com/1200x400') no-repeat center;
+    background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)),
+                url('https://via.placeholder.com/1200x400') no-repeat center;
     background-size: cover;
-    color: white;
 }
 
+.hero h2 {
+    color: #111;
+}
+
+.hero p {
+    color: #444;
+}
+
+/* ===== BUTTONS ===== */
 .btn {
     display: inline-block;
     padding: 12px 25px;
-    background-color: #ff3c00;
+    background-color: #ff2e2e;
     color: white;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
 .btn:hover {
-    background-color: #cc2f00;
+    background-color: #cc0000;
 }
 
+/* ===== PAGE TITLE ===== */
 .page-title {
     text-align: center;
-    margin: 30px 0;
+    margin: 40px 0 20px;
+    color: #ff2e2e;
 }
 
+/* ===== PRODUCTS ===== */
 .products {
     display: flex;
     justify-content: center;
     gap: 30px;
     padding: 20px;
+    flex-wrap: wrap;
 }
 
+/* ===== PRODUCT CARD ===== */
 .card {
-    background-color: white;
+    background-color: #ffffff;
     padding: 20px;
     text-align: center;
     width: 220px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* Soft shadow */
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(255,46,46,0.2);
 }
 
 .card img {
-    width: 100%;
-    border-radius: 5px;
+    width: 100%;        
+    height: 180px;      
+    object-fit: cover;  
+    border-radius: 6px;
+}
+
+}
+
+.card h3 {
+    color: #111;
+}
+
+.card p {
+    color: #ff2e2e;
+    font-weight: bold;
 }
 
 .card button {
@@ -76,17 +128,22 @@ nav a:hover {
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    margin-top: 10px;
+    transition: 0.3s;
 }
 
 .card button:hover {
-    background-color: #ff3c00;
+    background-color: #ff2e2e;
 }
 
+/* ===== ABOUT SECTION ===== */
 .about {
-    padding: 50px;
+    padding: 60px 20px;
     text-align: center;
+    background-color: #ffffff;
 }
 
+/* ===== FOOTER ===== */
 footer {
     background-color: #111;
     color: white;
@@ -94,3 +151,80 @@ footer {
     padding: 15px;
     margin-top: 40px;
 }
+
+/* ===== LOGO ===== */
+.logo-container h1 {
+    color: #ff2e2e;
+    font-size: 26px;
+    letter-spacing: 1px;
+}
+
+.logo {
+    width: 400px;
+    height: 200px;
+    object-fit: contain;
+}
+
+/* ===== CONTACT PAGE ===== */
+.contact {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 350px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    width: 100%;
+    resize: none;
+}
+
+.contact-form button {
+    background-color: #ff2e2e;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #cc0000;
+}
+
+.contact-info {
+    max-width: 300px;
+    text-align: left;
+}
+
+.contact-info h3 {
+    color: #ff2e2e;
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+    color: #222;
+}
+
+
