@@ -1,12 +1,10 @@
-/* ===== GLOBAL ===== */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f8f8f8; /* Light background */
-    color: #222; /* Soft black text */
+    background-color: #f8f8f8;
+    color: #222;
 }
 
-/* ===== HEADER ===== */
 header {
     background: linear-gradient(to right, #1a1a1a, #2b2b2b);
     color: white;
@@ -16,10 +14,9 @@ header {
 }
 
 .logo-container h1 {
-    color: #ff2e2e; /* Main red */
+    color: #ff2e2e; 
 }
 
-/* ===== NAVIGATION ===== */
 nav {
     margin-top: 10px;
 }
@@ -38,7 +35,6 @@ nav a:hover {
     border-bottom: 2px solid #ff2e2e;
 }
 
-/* ===== HERO SECTION ===== */
 .hero {
     text-align: center;
     padding: 100px 20px;
@@ -55,7 +51,6 @@ nav a:hover {
     color: #444;
 }
 
-/* ===== BUTTONS ===== */
 .btn {
     display: inline-block;
     padding: 12px 25px;
@@ -71,14 +66,12 @@ nav a:hover {
     background-color: #cc0000;
 }
 
-/* ===== PAGE TITLE ===== */
 .page-title {
     text-align: center;
     margin: 40px 0 20px;
     color: #ff2e2e;
 }
 
-/* ===== PRODUCTS ===== */
 .products {
     display: flex;
     justify-content: center;
@@ -87,14 +80,13 @@ nav a:hover {
     flex-wrap: wrap;
 }
 
-/* ===== PRODUCT CARD ===== */
 .card {
     background-color: #ffffff;
     padding: 20px;
     text-align: center;
     width: 220px;
     border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* Soft shadow */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08); 
     transition: 0.3s;
 }
 
@@ -136,14 +128,12 @@ nav a:hover {
     background-color: #ff2e2e;
 }
 
-/* ===== ABOUT SECTION ===== */
 .about {
     padding: 60px 20px;
     text-align: center;
     background-color: #ffffff;
 }
 
-/* ===== FOOTER ===== */
 footer {
     background-color: #111;
     color: white;
@@ -152,7 +142,6 @@ footer {
     margin-top: 40px;
 }
 
-/* ===== LOGO ===== */
 .logo-container h1 {
     color: #ff2e2e;
     font-size: 26px;
@@ -165,7 +154,6 @@ footer {
     object-fit: contain;
 }
 
-/* ===== CONTACT PAGE ===== */
 .contact {
     padding: 60px 20px;
     background-color: #ffffff;
@@ -226,5 +214,6 @@ footer {
     margin-bottom: 10px;
     color: #222;
 }
+
 
 
